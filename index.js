@@ -149,11 +149,13 @@ const parse = (snowflake) => {
     return result;
 }
 
-module.exports.EPOCH = EPOCH;
-module.exports.generate = generate;
-module.exports.getDate = getDate;
-module.exports.getIncrement = getIncrement;
-module.exports.getProcessId = getProcessId;
-module.exports.getTimestamp = getTimestamp;
-module.exports.getWorkerId = getWorkerId;
-module.exports.parse = parse;
+module.exports = {
+    EPOCH,
+    generate,
+    getDate,
+    getIncrement,
+    getProcessId,
+    getTimestamp,
+    getWorkerId,
+    parse
+}

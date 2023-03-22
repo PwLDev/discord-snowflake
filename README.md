@@ -9,7 +9,7 @@ npm install @pwldev/discord-snowflake
 ```
 This is a hybrid package, so you can import it both ways
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 const SnowflakeManager = require("@pwldev/snowflake");
 ```
 <hr>
@@ -21,7 +21,7 @@ const SnowflakeManager = require("@pwldev/snowflake");
 ### **generate**
 Generates a Snowflake ID using a Unix Timestamp or Date instance.
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 
 const newSnowflake = Snowflake.generate(1679460085433);
 console.log(newSnowflake);
@@ -32,7 +32,7 @@ console.log(newSnowflake);
 ### **getDate**
 Gets a Snowflake ID's timestamp as a Date instance
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 
 Snowflake.getDate(1087853498709577700)
 // Date
@@ -41,7 +41,7 @@ Snowflake.getDate(1087853498709577700)
 ### **getIncrement**
 Gets a Snowflake ID's increment
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 
 Snowflake.getIncrement(1087853498709577700)
 // 3769
@@ -50,7 +50,7 @@ Snowflake.getIncrement(1087853498709577700)
 ### **getProcessId**
 Gets a Snowflake ID's Process ID
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 
 Snowflake.getProcessId(1087853498709577700)
 // 3769
@@ -59,7 +59,7 @@ Snowflake.getProcessId(1087853498709577700)
 ### **getTimestamp**
 Gets a Snowflake ID's Unix Timestamp
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 
 Snowflake.getTimestamp(1087853498709577700)
 // 1087853498709577700
@@ -68,7 +68,7 @@ Snowflake.getTimestamp(1087853498709577700)
 ### **getWorkerId**
 Gets a Snowflake ID's Worker ID
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 
 Snowflake.getWorkerId(1087853498709577700)
 // 3769
@@ -76,7 +76,7 @@ Snowflake.getWorkerId(1087853498709577700)
 ### **parse**
 Gets all information at once from a Snowflake ID
 ```js
-import Snowflake from "@pwldev/snowflake";
+import * as Snowflake from "@pwldev/snowflake";
 
 Snowflake.parse(1087853498709577700)
 // { "increment": 3769, "processId": 3769, "timestamp": 1420096000414, "workerId": 3769 }

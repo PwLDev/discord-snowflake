@@ -1,7 +1,7 @@
 {
     "name": "@pwldev/discord-snowflake",
     "description": "A single file package to generate, parse, and do more with Discord Snowflake IDs",
-    "version": "1.0.1",
+    "version": "1.0.3",
     "main": "index.js",
     "types": "index.d.ts",
     "module": "index.mjs",
@@ -27,5 +27,6 @@
     ],
     "author": {
         "name": "pwldev"
-    }
+    },
+    "license": "MIT"
 }
